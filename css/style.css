@@ -22,17 +22,31 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 21px;
+    gap: 11px;
     /* margin-left: 865px; */
     color: gray;
     
-
+    font-size: 0.8rem;
     
 }
-
+.logo_main{
+    animation-name: logoanimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@keyframes logoanimation{
+    from{
+        background-color: #fa6980;
+    }
+    to{
+        background-color: aliceblue;
+    }
+}
 .navbars{
-    
     margin-left: 865px;
+    
+    width: 24%;
 }
 ul li{
     cursor: pointer;
@@ -50,9 +64,22 @@ ul li:hover{
     height: 600px;
     width: 58%;
     color: white;
-    padding-left: 140px;
-    padding-right: 139px;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    /* padding-left: 140px;
+    padding-right: 139px; */
+
 }
+.textonphoto_div{
+    width: 75%;
+    
+    /* align-items: center;
+    justify-content: center; */
+    margin: 177px auto;
+    
+}
+    
 .whiteline{
     width: 562px;
     height: 2px;
@@ -60,7 +87,7 @@ ul li:hover{
     margin-top: 39px;
 }
 .article_photo{
-    padding-top: 177px;
+    /* padding-top: 177px; */
     font-size: 1.5rem;
 }
 .description_photo{
@@ -93,10 +120,16 @@ ul li:hover{
 .articles_right{
     height: 600px;
     width: 42%;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-top: 100px;
     
+  
+    
+    
+}
+.articles_right_text{
+    width: 65%;
+    
+    height: 400px;
+    margin: 100px auto;
 }
 .whiteline_second{
     width: 382px;
@@ -112,14 +145,19 @@ font-size: 1.5rem;
 .boldarticle_arrows{
     display: flex;
    align-items: center;
-   /* justify-content: space-between; */
+   justify-content: space-between;
+   
+
    
     
+}
+.section_one_arrows{
+    display: flex;
 }
 .arrow_back{
     width: 6px;
     height: 10px;
-    margin-left: 175px;
+    /* margin-left: 100px; */
     
 }
 .arrow_forward{
@@ -190,7 +228,7 @@ font-size: 1.5rem;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border: 2px solid black;
+    
 }
 .arrow_back_two{
     margin-left: 925px;
@@ -199,7 +237,7 @@ font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    border: 2px solid black;
+    
     width: 100%;
     height: 350px;
 }
@@ -229,21 +267,9 @@ font-size: 1.5rem;
     transform:scale(1.15);
 }
 
-.card_one_div{
-    /* width: 31.6%; */
-    
-    border: 2px solid black;
-    
-}
-.card_two_div{
-    
-    /* width: 31.6%; */
-    border: 2px solid black;
-}
-.card_three_div{
-    /* width: 31.6%; */
-    border: 2px solid black;
-}
+
+
+
 .card_one_div_text{
     padding-left: 40px;
     width: 290px;
@@ -298,7 +324,7 @@ font-size: 0.90rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid black;
+    
 
 
 }
@@ -389,7 +415,7 @@ font-size: 0.90rem;
 }
 .sectionthree_right{
     width: 31%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* display: flex; */
     /* align-items: center;
     justify-content: center; */
@@ -404,8 +430,7 @@ font-size: 0.90rem;
 }
 .sectionthree_right_mid{
     margin-top: 27px;
-    border: 2px solid red;
-}
+    }
 .sectionthree_right_mid_title{
     margin-top: 15px; 
 }
@@ -415,8 +440,6 @@ font-size: 0.90rem;
 }
 .sectionthree_right_bottom{
     margin-top: 27px;
-    border: 2px solid red;
-
 }
 .sectionthree_right_bottom_title{
     margin-top: 15px;
@@ -424,9 +447,7 @@ font-size: 0.90rem;
 .sectionthree_right_bottom_time{
     margin-top: 10px;
 }
-.sectionthree_right_top{
-    border: 2px solid red;
-}
+
 .footer_one{
     width: 100%;
     background-color: #a6adb4;
@@ -438,7 +459,7 @@ font-size: 0.90rem;
 .footerleft{
     display: flex;
     margin-left: 142px;
-    border: 2px solid red;
+    
     margin-top:59px;
     position: absolute;
     
@@ -487,7 +508,7 @@ font-size: 0.90rem;
 }
 .footer_icons{
     position: absolute;
-    border: 2px solid red;
+    
     margin-top: 56px;
     margin-left: 1141px;
     /* gap: 32px; */
@@ -498,7 +519,7 @@ font-size: 0.90rem;
 
 
 
-/* აქ იწყება მეორე გვერდი */
+                         /* აქ იწყება მეორე გვერდი */
 
 
 
@@ -506,6 +527,20 @@ font-size: 0.90rem;
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+}
+.logo_page2{
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    animation-name: logoanimation2;
+}
+@keyframes logoanimation2{
+    from{
+        background-color: #fa6980;
+    }
+    to{
+        background-color: aliceblue;
+    }
 }
 .header_page2{
     width: 100%;
@@ -518,7 +553,7 @@ font-size: 0.90rem;
     padding-right: 20px;
     padding-bottom: 18px;
     height: 50px;
-    border: 2px solid red;
+    
 }
 .navmenu_page2{
     display: flex;
@@ -527,6 +562,7 @@ font-size: 0.90rem;
     gap: 21px;
     /* margin-left: 865px; */
     color: gray;
+    font-size: 0.8rem;
     /* border: 2px solid red; */
 }
 .navbars_page2{
@@ -543,24 +579,26 @@ font-size: 0.90rem;
     display: flex;
     gap: 30px;
     align-items: center;
-    border: 2px solid red; 
+    
 
 }
 .worldnewsbar_leftline_article{
     font-size: 0.8rem;
     font-weight: bold;
+    cursor: pointer;
 }
 .worldnewsbar_leftline_article2{
     font-size: 0.8rem;
     color:#a6adb4 ;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .section_one_page2{
     display: flex;
     width: 81%;
     margin: 45px auto;
-    border: 2px solid yellow;
+    
     height: 500px;
 
 }
@@ -577,7 +615,7 @@ font-size: 0.90rem;
 }
 .section_one_text{
     text-align: center;
-    border: 2px solid rebeccapurple;
+    
     height: 100%;
     
 }
@@ -608,7 +646,7 @@ font-size: 0.90rem;
 }
 .form_section_one{
     width: 63%;
-    border: 2px solid red;
+    
     display: flex;
     flex-direction: column;
     margin: 140px auto;
@@ -644,7 +682,7 @@ font-size: 0.90rem;
     width: 81%;
     margin: 39px auto;
     height: 255px;
-    border: 2px solid forestgreen;
+    
     display: flex;
     justify-content: space-between;
     padding-top: 42px;
@@ -652,15 +690,16 @@ font-size: 0.90rem;
 
 }
 .section_two_page2_left{
+    /* flex: 1; */
     width: 32%;
-    border: 2px solid red;
+    
 }
 .section_two_page2_mid{
     width: 32%;
 }
 .section_two_page2_right{
     width: 32%;
-    border: 2px solid red;
+    
 }
 .section_two_page2_article{
     font-size: 1.5rem;
@@ -698,7 +737,9 @@ font-size: 0.90rem;
 }
 .section_three_page2_text_bottom{
     margin-top: 40px;
-    
+}
+.section_three_page2_text_three{
+    display: none;
 }
 .footer_page2{
     width: 100%;
@@ -706,4 +747,495 @@ font-size: 0.90rem;
     margin-top: 160px;
     height: 200px;
     display: flex;
+}
+
+
+                            /* აქედან იწყება რესპონსივები */
+
+
+@media(max-width:768px){
+    
+    .header_page1{
+        width: 100%;
+    }
+    .navbars{
+        margin-left: 300px;
+        width: 40%;
+    }
+   .section_one{
+display: flex; 
+flex-direction: column;
+/* flex-wrap: wrap; */
+}
+    .textonphoto{
+    width: 100%;
+}
+.textonphoto{
+    width: 100%;
+    
+}
+
+.textonphoto_div{
+    width: 80%;
+    margin: 160px auto;
+    
+}
+.articles_right{
+    width: 100%;
+}
+.morenews{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    
+    flex-direction: column;
+
+}
+.boldarticle_arrows{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+.section_one_arrows{
+    margin-left: 180px;
+}
+.whiteline_second{
+    width: 100%;
+}
+.section_one_texts_right{
+    display: flex;
+    
+    margin-top: 41px;
+}
+.articles_right_text{
+    width: 80%;
+    margin-top: 40px;
+}
+.section_two{
+    width: 90%;
+    
+    height: 412px;
+
+}
+.card_three_div{
+    display: none;
+}
+.trending_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.arrow_back_two{
+    margin-left: 410px;
+}
+.section_two_card1{
+    width: 100%;
+}
+.card_one_div{
+    /* border: 2px solid red;  */
+    width: 47%;
+}
+.card_two_div{
+    /* border: 2px solid red;  */
+    width: 47%;
+}
+.section_two_card2{
+    width: 100%;
+}
+.happeningnow_div{
+    width: 90%;
+}
+.arrowback_three{
+    margin-left: 340px;
+}
+.section_three{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 1186px;
+}
+.textsonphoto_two{
+    width: 100%;
+}
+.forest_image{
+    margin-top: 40px;
+}
+.sectionthree_right_bottom{
+    display: none;
+}
+.sectionthree_right{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.sectionthree_right{
+    margin-top: 40px;
+}
+.sectionthree_right_top{
+    width: 47%;
+}
+.sectionthree_right_mid{
+    width: 47%;
+    height: 260px;
+    margin-top: 0;
+}
+.elephant_image{
+    width: 100%;
+}
+.sparrow_image{
+    width: 100%;
+}
+.sectionthree_right_top_title{
+    margin-top: 20px;
+
+}
+.sectionthree_right_top_time{
+    margin-top: 10px;
+}
+.sectionthree_right_mid_title{
+    margin-top: 20px;
+
+}
+.sectionthree_right_mid_time{
+    margin-top: 10px;
+}
+.footer_one{
+    width: 100%;
+    height: 316px;
+
+}
+.footerleft{
+    width: 85%;
+    margin: 59px 80px;
+    justify-content: space-between;
+}
+.footerleft_left{
+    margin-left: 285px;
+}
+.inputmail{
+    margin-top: 190px;
+    margin-left: 80px;
+    
+    width: 35%;
+}
+.footer_icons{
+    margin-left: 592px;
+    margin-top: 240px;
+    width: 16%;
+}
+
+
+                           /* ტაბლეტი გვერდი 2 */
+
+
+.navbars_page2{
+    margin-left: 300px;
+    /* width: 45%; */
+    
+}
+.navmenu_page2{
+    gap: 10px;
+}
+.worldnewsbar{
+    width: 90%;
+}
+.section_one_page2{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    
+    border-bottom: 2px solid #ebeded;
+    
+}
+.section_one_left{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+/* .section_one_textandphoto{
+    background-image: url('../images/cliff_tablet.png');
+} */
+.section_one_right{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.form_section_one{
+    margin: 87px auto
+}
+.section_two_page2{
+    display: flex;
+    flex-direction: column;
+    height: 467px;
+padding-top: 30px;
+width: 90%;
+border-bottom: 2px solid gray;
+}
+.section_two_page2_left{
+
+width: 45%;
+}
+.section_two_page2_mid{
+    width: 45%;
+    margin-top: 5px;
+}
+.section_two_page2_right{
+    margin-top: -230px;
+    margin-left: 350px;
+    width: 45%;
+}
+.section_three_page2{
+    width: 90%;
+    border-bottom: 2px solid grey;
+    height: 680px;
+}
+.elephant_image{
+    width: 100%;
+}
+.section_three_page2_texts{
+    margin-top: 40px;
+}
+.footer_page2{
+    width: 100%;
+    height: 316px;
+}
+}
+         
+            /* აქედან იწყება ტელეფონის რესპონსივი */
+
+
+@media(max-width:375px){
+    .header_page1{
+        width: 100%;
+        height: 88px;
+
+    }
+    .navbars{
+        display: none;
+    }
+    .profilephoto{
+        display: none;
+    }
+    .logophoto{
+        margin-left: 40px;
+    }
+    .section_one{
+        width: 100%;
+    height: 866px;
+    }
+    .textonphoto{
+        width: 100%;
+        height: 388px;
+        background-size: 100% 100%;
+    }
+    .textonphoto_div{
+        margin-top: 40px;
+        width: 90%;
+    }
+    .whiteline{
+        width: 100%;
+    }
+   .learn_more{
+    width: 45%;
+   }
+   .articles_right{
+    width: 100%;
+   }
+   .articles_right_text{
+    width: 90%;
+    
+   }
+   .section_one_arrows{
+    margin-left: 100px;
+   }
+.section_one_texts_right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    width: 100%;
+    
+    
+}
+.text_top{
+width: 100%;
+}
+.text_bottom{
+    width: 100%;
+    margin-top: 20px;
+}
+.article_articletitle{
+    margin-top: 10px;
+}
+.article_articletitle_second{
+    margin-top: 10px;
+
+}
+.section_two{
+    width: 90%;
+    height: 716px;
+
+}
+.arrow_back_two{
+    margin-left: 75px;
+}
+.three_cards{
+    display: flex;
+    flex-direction: column;
+}
+.card_one_div{
+    width: 100%;
+}
+.card_two_div{
+    width: 100%;
+    margin-top: 40px;
+}
+.card_one_div_article{
+    margin-top: 15px;
+}
+.card_two_div_article{
+    margin-top: 15px;
+
+}
+.happeningnow_div{
+    width: 90%;
+
+}
+.arrowback_three{
+    margin-left: 20px;
+}
+.section_three{
+    width: 90%;
+    
+}
+.goldengate_image{
+    width: 100%;
+    background-size: 100% 100%;
+    height: 300px;
+    
+}
+.section_three_pic1_article2{
+margin-top: 56px;
+
+}
+.forest_image{
+    width: 100%;
+    background-size: 100% 100%;
+    height: 300px;
+}
+.section_three_pic2_article2{
+    margin-top: 56px;
+}
+.sectionthree_right{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+
+}
+.sectionthree_right_top{
+    width: 100%;
+}
+.sectionthree_right_mid{
+    width: 100%;
+}
+.footer_one{
+    width: 100%;
+    height: 143px;
+    
+    
+}
+.footerleft{
+    display: none;
+}
+.inputmail{
+    display: none;
+}
+.footer_icons{
+    margin-left: 85px;
+    margin-top: 73px;
+    align-items: center;
+    
+    width: 50%;
+    scale: 1.5;
+}
+.header_page2{
+    width: 100%;
+    height: 88px;
+    
+
+}
+.navbars_page2{
+    display: none;
+}
+.profilepic_page2{
+    display: none;
+}
+.worldnewsbar{
+    display: none;
+}
+.section_one_page2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: auto;
+    border-bottom: 2px solid gray;
+
+}
+.section_one_left{
+    width: 100%;
+}
+.section_one_textandphoto{
+    height: 388px;
+    width: 100%;
+    background-size: 100% 100%;
+
+}
+.section_one_right{
+    width: 100%;
+}
+.form_section_one{
+    /* border: 2px solid red; */
+    width: 90%;
+}
+.section_one_input3{
+    width: 50%;
+}
+.section_two_page2{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 672px;
+
+}
+.section_two_page2_left{
+    width: 100%;
+    
+}
+.section_two_page2_mid{
+    width: 100%;
+    margin-top: 40px;
+
+}
+.section_two_page2_right{
+    width: 100%;
+    
+    margin: auto;
+    margin-top: 40px;
+}
+.section_two_page2_right_time{
+    margin-top: 30px;
+}
+.section_three_page2{
+    width: 90%;
+    
+    height: 720px;
+}
+.footer_page2{
+    height: 143px;
+    width: 100%;
+}
 }
